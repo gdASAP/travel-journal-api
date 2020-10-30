@@ -29,7 +29,7 @@ Travel Journal, is web app where users can store online journal entries. The use
 ![JournalERD](https://media.git.generalassemb.ly/user/30427/files/e0959000-183a-11eb-9d89-a96ce24bdb38)
 ---
 ## LINKS
-[API SITE]('https://mighty-mesa-16767.herokuapp.com/')
-[CLIENT SITE] ('https://sei-dev-ish.github.io/lilys-client/')
-[API REPO] ('https://github.com/gdASAP/travel-journal-api')
-[CLIENT REPO] ('https://github.com/gdASAP/travel-journal-client')
+*[API SITE](https://mighty-mesa-16767.herokuapp.com/)
+*[CLIENT SITE] (https://sei-dev-ish.github.io/lilys-client/)
+*[API REPO] (https://github.com/gdASAP/travel-journal-api)
+*[CLIENT REPO] (https://github.com/gdASAP/travel-journal-client)
