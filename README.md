@@ -40,3 +40,7 @@ Travel Journal, is web app where users can store online journal entries. The use
 *[CLIENT SITE] (https://gdasap.github.io/travel-journal-client/)
 *[API REPO] (https://github.com/gdASAP/travel-journal-api)
 *[CLIENT REPO] (https://github.com/gdASAP/travel-journal-client)
+---
+## SETUP AND INTSTALLATION
+---
+https://git.generalassemb.ly/ga-wdi-boston/express-api-template

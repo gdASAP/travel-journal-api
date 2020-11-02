@@ -6,6 +6,7 @@ const passport = require('passport')
 // pull in Mongoose model for examples
 const JournalEntry = require('../models/journalEntry')
 
+const store = require('./../../config/store')
 // this is a collection of methods that help us detect situations when we need
 // to throw a custom error
 const customErrors = require('../../lib/custom_errors')
@@ -38,6 +39,10 @@ router.get('/journal-history', requireToken, (req, res, next) => {
       return entries.map(entry => entry.toObject())
     })
     // respond with status 200 and JSON of the examples
+    .then(entries => {
+      return entries.filter(el => el.owner == `${store._id}`)
+    })
+
     .then(entries => res.status(200).json({ entries: entries }))
     // if an error occurs, pass it to the handler
     .catch(next)

@@ -5,6 +5,7 @@ const crypto = require('crypto')
 const passport = require('passport')
 // bcrypt docs: https://github.com/kelektiv/node.bcrypt.js
 const bcrypt = require('bcrypt')
+const store = require('./../../config/store')
 
 // see above for explanation of "salting", 10 rounds is recommended
 const bcryptSaltRounds = 10
@@ -91,6 +92,7 @@ router.post('/sign-in', (req, res, next) => {
       }
     })
     .then(user => {
+      store._id = user._id
       // return status 201, the email, and the new token
       res.status(201).json({ user: user.toObject() })
     })
